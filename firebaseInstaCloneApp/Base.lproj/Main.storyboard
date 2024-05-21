@@ -11,7 +11,7 @@
         <!--Upload-->
         <scene sceneID="6Y7-Qq-OU8">
             <objects>
-                <viewController id="gU6-6E-K0c" sceneMemberID="viewController">
+                <viewController id="gU6-6E-K0c" customClass="UploadViewController" customModule="firebaseInstaCloneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbF-yR-Wcq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,24 +27,39 @@
         <!--Settings-->
         <scene sceneID="IM3-d6-KpG">
             <objects>
-                <viewController id="OCw-Ac-Rgz" sceneMemberID="viewController">
+                <viewController id="OCw-Ac-Rgz" customClass="SettingsViewController" customModule="firebaseInstaCloneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lfm-BT-VXp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgf-o2-eTp">
+                                <rect key="frame" x="139" y="392" width="115" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutButton:" destination="OCw-Ac-Rgz" eventType="touchUpInside" id="Zc4-rN-GCF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t5N-23-oGl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="oZt-lU-KnP"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ToLogout" modalPresentationStyle="fullScreen" id="wHc-cO-C93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuX-An-pba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-547" y="985"/>
+            <point key="canvasLocation" x="-547.32824427480909" y="984.50704225352115"/>
         </scene>
         <!--Feed-->
         <scene sceneID="oCV-8E-EFc">
             <objects>
-                <viewController id="LE5-0Z-HRV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RIY-4y-6zo">
+                <viewController id="LE5-0Z-HRV" customClass="FeedViewController" customModule="firebaseInstaCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIY-4y-6zo" customClass="Fee">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8zB-WU-uDN"/>
@@ -89,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo7-iH-ba7">
-                                <rect key="frame" x="62" y="259" width="74" height="35"/>
+                                <rect key="frame" x="62" y="293" width="74" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="sign in"/>
                                 <connections>
@@ -97,31 +112,31 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpq-nO-Ipj">
-                                <rect key="frame" x="249" y="259" width="80" height="35"/>
+                                <rect key="frame" x="249" y="293" width="80" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="sign up"/>
                                 <connections>
                                     <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsX-jU-jDj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOO-Kp-cNQ">
-                                <rect key="frame" x="63" y="147" width="267" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOO-Kp-cNQ">
+                                <rect key="frame" x="63" y="181" width="267" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="piR-Tb-VTw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-Xb-for">
-                                <rect key="frame" x="63" y="200" width="267" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-Xb-for">
+                                <rect key="frame" x="63" y="234" width="267" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="KwC-iq-Tg5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTACLONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-Ek-zP1">
-                                <rect key="frame" x="114" y="59" width="165" height="51"/>
+                                <rect key="frame" x="114" y="0.0" width="165" height="144"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
