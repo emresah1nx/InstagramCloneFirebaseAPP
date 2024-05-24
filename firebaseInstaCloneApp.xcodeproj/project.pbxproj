@@ -10,6 +10,7 @@
 		0F0971972BFD5D1000F7DB6E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0971962BFD5D1000F7DB6E /* FeedViewController.swift */; };
 		0F0971992BFD5D1A00F7DB6E /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0971982BFD5D1A00F7DB6E /* UploadViewController.swift */; };
 		0F09719B2BFD5D2800F7DB6E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09719A2BFD5D2800F7DB6E /* SettingsViewController.swift */; };
+		0F09719D2BFFF18300F7DB6E /* FeedCeel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09719C2BFFF18300F7DB6E /* FeedCeel.swift */; };
 		0F9F75952BFCB56B00822EA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F75942BFCB56B00822EA5 /* AppDelegate.swift */; };
 		0F9F75972BFCB56B00822EA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F75962BFCB56B00822EA5 /* SceneDelegate.swift */; };
 		0F9F75992BFCB56B00822EA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F75982BFCB56B00822EA5 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		0F0971962BFD5D1000F7DB6E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0F0971982BFD5D1A00F7DB6E /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		0F09719A2BFD5D2800F7DB6E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0F09719C2BFFF18300F7DB6E /* FeedCeel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCeel.swift; sourceTree = "<group>"; };
 		0F9F75912BFCB56B00822EA5 /* firebaseInstaCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseInstaCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9F75942BFCB56B00822EA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9F75962BFCB56B00822EA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				0F0971962BFD5D1000F7DB6E /* FeedViewController.swift */,
 				0F0971982BFD5D1A00F7DB6E /* UploadViewController.swift */,
 				0F09719A2BFD5D2800F7DB6E /* SettingsViewController.swift */,
+				0F09719C2BFFF18300F7DB6E /* FeedCeel.swift */,
 				0F9F759A2BFCB56B00822EA5 /* Main.storyboard */,
 				0F9F759D2BFCB56C00822EA5 /* Assets.xcassets */,
 				0F9F759F2BFCB56C00822EA5 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F09719D2BFFF18300F7DB6E /* FeedCeel.swift in Sources */,
 				0F9F75992BFCB56B00822EA5 /* ViewController.swift in Sources */,
 				0F0971992BFD5D1A00F7DB6E /* UploadViewController.swift in Sources */,
 				0F9F75952BFCB56B00822EA5 /* AppDelegate.swift in Sources */,
